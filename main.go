@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/psinthorn/GoldenSamuiBirdsNest/app"
 
 func main() {
-	fmt.Println("Hello Golden Samui Bird's Nest")
+	app.StartServer()
 }

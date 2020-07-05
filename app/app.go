@@ -1,14 +1,33 @@
 package app
 
-var (
-	router *gin.Default()
+import (
+	"log"
+
+	"github.com/gin-gonic/gin"
 )
 
-func ServerStart() {
+//Create router as gin engine type
+var (
+	router *gin.Engine
+)
 
-	port := app.ServerRunningPort("8080")
+//Init gin router
+func init(){
+	router = gin.Default()
+}
 
-	err := nil 
+func ServerApp() {
+	// Check current port running
+	port := app.Server.ServerRunningPort("8080")
 
-	
+	// Teplate: Load HTML Template global folder
+	router.LoadHTMLGlob("views/*/*.html")
+
+	// Static: Load static file folder this is for images, css ans scripts
+	router.Static("/assets", "./assets")
+
+	err := router.Run(":" +port)
+	if err != nil {
+		log.Fatal("ListenAndServe:"+port, err)
+	}	
 }

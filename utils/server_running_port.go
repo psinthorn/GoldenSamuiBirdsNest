@@ -1,10 +1,16 @@
 package app
 
-func ServerRunningPort(port string) string {}
-envPort := os.Getenv("PORT");
+import "os"
 
-if envPort == nil {
-	servPort := port 
+type server struct{}
+
+var Server server
+
+func (s *server) ServerRunningPort(port string) string {
+	serverPort := os.Getenv("PORT")
+
+	if serverPort == "" {
+		serverPort = port
+	}
+	return serverPort
 }
-
-return port
