@@ -1,12 +1,12 @@
-package app
+package util
 
 import "os"
 
 type server struct{}
 
-var Server server
+var ServerPort server
 
-func (s *server) ServerRunningPort(port string) string {
+func (s *server) PortRunning(port string) string {
 	serverPort := os.Getenv("PORT")
 
 	if serverPort == "" {
