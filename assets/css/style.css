@@ -152,3 +152,24 @@ text-align: center;
     color: #777;
 }
 
+
+/* why page */
+.height--100 {
+    height: 100vh;
+}
+
+.why__image--left {
+    /* box-sizing: border-box; */
+    /* background-image: url(./../img/samui-birds-nest-package.png);
+    background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+.why__text--right {
+    box-sizing: border-box;
+    color: #000;
+    background-color: #777;
+    width: 25rem;
+    
+}
+
