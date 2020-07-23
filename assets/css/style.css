@@ -1,69 +1,154 @@
 /*
 COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
+red: #dd1c1d
+Golden Dark: #daa42a
+Golden Light: #ffe327
 
 */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     border: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
+
+    box-sizing: border-box;
 }
 
 .header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(126,213,111, 0.8), rgba(40,180,131, 0.8)), url(./../img/hero.jpg);
+    height: 100vh;
+    /* background-image: linear-gradient(to right bottom, rgba(218,25,26, 0.8), rgba(245,81,30, 0.8)), url(./../img/fresh-edible-bird-s-nest.jpg); */
+    background-image: linear-gradient(to right bottom, rgba(192, 192, 192, 0.2), rgba(180,180,180, 0.2)), url(./../img/fresh-edible-bird-s-nest.png);
     background-size: cover;
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 80% );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% );
 
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
-.logo {
-    height: 35px;
+.header__logo {
+    height: 9.4rem;
 }
 
-.header-text-box {
+.header__text-box {
 position: absolute;
-top: 25%;
+top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
+
+text-align: center;
+
 }
 
 .header-primary {
     color: white;
     text-transform: uppercase;
+
+    backface-visibility: hidden;
+     margin-bottom: 3.5rem;
 }
-.header-primary-main {
+.header-primary--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+    /* animation-delay: 1s; */
 
 }
-.header-primary-sub {
+.header-primary--sub {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
+   
+
+    /* use short animation */
+    animation: moveInRight 2s ease-out;
+
+    /* Use original animation  */
+    /* animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; */
+
+    /* animation-delay: 1s; */
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10remx);
+    }
+    80% {
+        transform: translateX(2rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-2rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+
+}
+
+.btn:hover {
+    transform: translateY(-3);
+    box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+}
+.btn:active {
+    transform: translateY(-1);
+     box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.2);
+}
+.btn--white {
+    background-color: #fff;
+    color: #777;
 }
 
