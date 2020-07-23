@@ -1,0 +1,61 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+     margin-bottom: 3.5rem;
+
+     &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+    /* animation-delay: 1s; */
+
+    }
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+    
+
+        /* use short animation */
+        animation: moveInRight 2s ease-out;
+
+        /* Use original animation  */
+        /* animation-name: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-out; */
+
+        /* animation-delay: 1s; */
+    }
+
+}
+
+
+
+.why {
+
+    &__image--left {
+    /* box-sizing: border-box; */
+    /* background-image: url(./../img/samui-birds-nest-package.png);
+    background-size: cover; */
+    background-repeat: no-repeat;
+    }
+
+    &__text--right {
+        box-sizing: border-box;
+        color: $color-black;
+        background-color:$color-grey;
+        width: 25rem;
+        
+    }
+}
+
+
