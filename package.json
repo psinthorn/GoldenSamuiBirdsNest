@@ -1,0 +1,23 @@
+{
+  "name": "goldensamuibirdsnest.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psinthorn/GoldenSamuiBirdsNest.git"
+  },
+  "author": "psinthorn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psinthorn/GoldenSamuiBirdsNest/issues"
+  },
+  "homepage": "https://github.com/psinthorn/GoldenSamuiBirdsNest#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
+}
