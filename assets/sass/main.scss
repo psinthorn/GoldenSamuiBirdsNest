@@ -8,11 +8,19 @@
 @import "./base/utilities";
 
 @import "./components/button";
+@import "./components/maps";
+@import "./components/social";
+@import "./components/composition";
+@import "./components/feature-box";
 
 @import "./layouts/header";
 @import "./layouts/grid";
+@import "./layouts/footer";
 
-@import "./pages/welcome"
+@import "./pages/welcome";
+@import "./pages/about";
+@import "./pages/product";
+
 
 
 

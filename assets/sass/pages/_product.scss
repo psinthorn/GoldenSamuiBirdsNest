@@ -1,0 +1,19 @@
+.section-product {
+   
+    background-color: $color-grey-light;
+   .product {
+       &-banner {
+        height: 100vh;
+        padding: 10rem;
+        background-image: url(./../img/samui-birds-nest-bg-bl-02-03.png);
+        background-size: cover;
+
+    }
+    &-list {
+        height: 100vh;
+        padding: 10rem;
+    }
+
+   }
+    
+}
