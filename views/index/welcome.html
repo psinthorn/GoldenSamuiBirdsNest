@@ -1,20 +1,26 @@
 {{ template "layout-header.html" .}}
-<div class="header">
-    <div class="header__logo-box">
-        <img src="./../../assets/img/samui-birds-nest-logo.png" class="header__logo" alt="samui birds nest logo">
-    </div>
-    <div class="header__text-box">
-        <div class="header-primary">
-            <div class="header-primary--main">Samui Bird's Nest</div>
-            <div class="header-primary--sub">Thailand Quality Bird's Nest</div>
+<main>
+    <div class="header">
+        <div class="header__logo-box">
+            <img src="./../../assets/img/samui-birds-nest-logo.png" class="header__logo" alt="samui birds nest logo">
         </div>
+        <div class="header__text-box">
+            <div class="heading-primary">
+                <div class="heading-primary--main">Samui Bird's Nest</div>
+                <div class="heading-primary--sub">Thailand Quality Bird's Nest</div>
+            </div>
 
-        <a href="#" class="btn btn--white">Discover More</a>
-    </div>
-    <!-- <div class="header-bottom">
+            <a href="#" class="btn btn--white">Discover More</a>
+        </div>
+        <!-- <div class="header-bottom">
         <img src="./../../assets/img/samui-birds-nest-logo.png" class="logo" alt="Logo">
     </div> -->
-</div>
+    </div>
+    {{ template "about.html" .}}
+    {{ template "product.html" .}}
 
-{{ template "why-samui-birds-nest.html"}}
+</main>
+{{ template "social.html" .}}
+{{ template "maps.html" .}}
+
 {{ template "layout-footer.html" .}}

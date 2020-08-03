@@ -23,59 +23,6 @@ body {
   color: #777;
   box-sizing: border-box; }
 
-.header {
-  height: 100vh;
-  /* background-image: linear-gradient(to right bottom, rgba(218,25,26, 0.8), rgba(245,81,30, 0.8)), url(./../img/fresh-edible-bird-s-nest.jpg); */
-  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(180, 180, 180, 0.2)), url(./../img/fresh-edible-bird-s-nest.png);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 9.4rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.header-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 3.5rem; }
-
-.header-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 700;
-  letter-spacing: 2rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  /* animation-delay: 1s; */ }
-
-.header-primary--sub {
-  display: block;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 1.5rem;
-  /* use short animation */
-  animation: moveInRight 2s ease-out;
-  /* Use original animation  */
-  /* animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; */
-  /* animation-delay: 1s; */ }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -96,11 +43,132 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 3.5rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 1s; */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
+    /* use short animation */
+    animation: moveInRight 2s ease-out;
+    /* Use original animation  */
+    /* animation-name: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-out; */
+    /* animation-delay: 1s; */ }
+  .heading-primary-title--golden {
+    color: #daa42a;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    display: block;
+    background-image: linear-gradient(to right, #ffe327, #daa42a);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s; }
+    .heading-primary-title--golden:hover {
+      transform: skewY(2deg); }
+  .heading-primary-title-sub--golden {
+    display: block;
+    color: #daa42a;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1rem; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 8rem; }
+
+.why__image--left {
+  /* box-sizing: border-box; */
+  /* background-image: url(./../img/samui-birds-nest-package.png);
+    background-size: cover; */
+  background-repeat: no-repeat; }
+
+.why__text--right {
+  box-sizing: border-box;
+  color: #000;
+  background-color: #777;
+  width: 25rem; }
+
+/* why page */
+.height--100 {
+  height: 100vh; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-mt-sm {
+  margin-top: 1.5rem; }
+
+.u-mt-md {
+  margin-top: 4rem; }
+
+.u-mt-lg {
+  margin-top: 8rem; }
+
+.u-mb-sm {
+  margin-bottom: 1.5rem; }
+
+.u-mb-md {
+  margin-bottom: 4rem; }
+
+.u-mb-lg {
+  margin-bottom: 8rem; }
+
+.u-pt-sm {
+  padding-top: 1.5rem; }
+
+.u-pt-md {
+  padding-top: 4rem; }
+
+.u-pt-lg {
+  padding-top: 8rem; }
+
+.u-pb-sm {
+  padding-bottom: 1.5rem; }
+
+.u-pb-md {
+  padding-bottom: 4rem; }
+
+.u-pb-lg {
+  padding-bottom: 8rem; }
+
+.bg-clippath-5025 {
+  height: 100vh;
+  background-image: url(./../img/samui-birds-nest-bg-bl-03.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%); }
+
+.bg-grey-blur {
+  backdrop-filter: blur(10x);
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.0rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s; }
@@ -117,18 +185,127 @@ body {
   background-color: #fff;
   color: #777; }
 
-/* why page */
-.height--100 {
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #777;
+  border-bottom: 1px solid #777;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #777;
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px); }
+
+.section-maps {
+  width: 100%;
+  background-color: #777;
+  height: 50vh; }
+
+.section-social {
+  height: 50vh; }
+
+.composition {
+  position: relative; }
+  .composition-photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    outline-offset: .2rem; }
+    .composition-photo-p1 {
+      top: 0rem;
+      left: 0; }
+    .composition-photo-p2 {
+      top: 15rem;
+      left: 6rem; }
+    .composition-photo-p3 {
+      top: 2rem;
+      right: 0; }
+    .composition-photo:hover {
+      outline: 0.3rem solid #daa42a;
+      transform: scale(1.8);
+      box-shadow: 0 2rem 4rem black;
+      z-index: 20; }
+  .composition:hover .composition-photo:not(:hover) {
+    transform: scale(0.95); }
+
+.header {
+  height: 100vh;
+  /* background-image: linear-gradient(to right bottom, rgba(218,25,26, 0.8), rgba(245,81,30, 0.8)), url(./../img/fresh-edible-bird-s-nest.jpg); */
+  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(247, 247, 247, 0.2)), url(./../img/samui-birds-nest-bg-bl-03.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 9.4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc((2 * (100% - 2 * 2rem) / 3 ) + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc((2 * (100% - 3 * 2rem) / 4 ) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc((3 * (100% - 3 * 2rem) / 4 ) + 2 * 2rem); }
+
+.layout-footer {
+  text-align: center;
+  padding: 8rem;
+  background-color: #000;
+  height: 50vh; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 0rem;
+  background-size: cover;
   height: 100vh; }
 
-.why__image--left {
-  /* box-sizing: border-box; */
-  /* background-image: url(./../img/samui-birds-nest-package.png);
-    background-size: cover; */
-  background-repeat: no-repeat; }
-
-.why__text--right {
-  box-sizing: border-box;
-  color: #000;
-  background-color: #777;
-  width: 25rem; }
+.section-product {
+  background-color: #f7f7f7; }
+  .section-product .product-banner {
+    height: 100vh;
+    padding: 10rem;
+    background-image: url(./../img/samui-birds-nest-bg-bl-02-03.png);
+    background-size: cover; }
+  .section-product .product-list {
+    height: 100vh;
+    padding: 10rem; }
