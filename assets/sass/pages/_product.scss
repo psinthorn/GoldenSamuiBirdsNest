@@ -10,10 +10,19 @@
 
     }
     &-list {
-        height: 100vh;
+        height: 75vh;
+        padding: 10rem;
+    }
+
+    &-price {
+        //background-color: $color-grey-light-1;
+        background-color: $color-white;
+        height: 130vh;
         padding: 10rem;
     }
 
    }
     
 }
+
+

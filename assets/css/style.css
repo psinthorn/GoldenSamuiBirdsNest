@@ -53,6 +53,10 @@ body {
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: 2rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ffe327, #daa42a);
+    -webkit-background-clip: text;
+    color: transparent;
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -74,7 +78,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1rem;
-    display: block;
+    display: inline-block;
     background-image: linear-gradient(to right, #ffe327, #daa42a);
     -webkit-background-clip: text;
     color: transparent;
@@ -87,6 +91,18 @@ body {
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: 1rem; }
+  .heading-primary-title--red {
+    color: #daa42a;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ffe327, #dd1c1d);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s; }
+    .heading-primary-title--red:hover {
+      transform: skewY(2deg); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -211,7 +227,21 @@ body {
   height: 50vh; }
 
 .section-social {
-  height: 50vh; }
+  height: 50vh;
+  background-color: #f7f7f7; }
+  .section-social .social {
+    padding: 2.5rem; }
+    .section-social .social-title {
+      font-size: 1.6rem;
+      text-align: center; }
+    .section-social .social-icons {
+      transition: all .5s;
+      font-size: 8rem;
+      font-weight: 900;
+      display: inline-block;
+      text-align: right; }
+      .section-social .social-icons:hover {
+        transform: translateY(-1rem) scale(1.05); }
 
 .composition {
   position: relative; }
@@ -239,6 +269,30 @@ body {
       z-index: 20; }
   .composition:hover .composition-photo:not(:hover) {
     transform: scale(0.95); }
+
+.feature-box {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #777;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  transition: all .5s; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box-icon {
+    font-size: 6rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ffe327, #daa42a);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box-price {
+    background-color: rgba(221, 28, 29, 0.1);
+    color: #dd1c1d; }
+  .feature-box-action {
+    background-color: rgba(221, 28, 29, 0.3);
+    color: #dd1c1d; }
 
 .header {
   height: 100vh;
@@ -273,24 +327,24 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 2rem) / 2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 2rem) / 3); }
+    width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc((2 * (100% - 2 * 2rem) / 3 ) + 2rem); }
+    width: calc((2 * (100% - 2 * 6rem) / 3 ) + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 2rem) / 4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc((2 * (100% - 3 * 2rem) / 4 ) + 2rem); }
+    width: calc((2 * (100% - 3 * 6rem) / 4 ) + 6rem); }
   .row .col-3-of-4 {
-    width: calc((3 * (100% - 3 * 2rem) / 4 ) + 2 * 2rem); }
+    width: calc((3 * (100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
 
 .layout-footer {
   text-align: center;
   padding: 8rem;
-  background-color: #000;
+  background-color: #777;
   height: 50vh; }
 
 .section-about {
@@ -307,5 +361,9 @@ body {
     background-image: url(./../img/samui-birds-nest-bg-bl-02-03.png);
     background-size: cover; }
   .section-product .product-list {
-    height: 100vh;
+    height: 75vh;
+    padding: 10rem; }
+  .section-product .product-price {
+    background-color: #fff;
+    height: 130vh;
     padding: 10rem; }
