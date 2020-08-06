@@ -341,11 +341,44 @@ body {
   .row .col-3-of-4 {
     width: calc((3 * (100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
 
-.layout-footer {
-  text-align: center;
-  padding: 8rem;
-  background-color: #777;
-  height: 50vh; }
+.footer {
+  font-size: 1.4rem;
+  padding: 10rem 0;
+  background-color: #333; }
+  .footer-logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer-logo {
+    width: 10rem;
+    height: auto; }
+  .footer-navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+    .footer-navigation-list {
+      list-style: none;
+      padding-left: 0; }
+    .footer-navigation-item {
+      display: inline-block; }
+      .footer-navigation-item:not(:last-child) {
+        margin-right: 2rem; }
+    .footer-navigation-link:visited, .footer-navigation-link:link {
+      text-decoration: none;
+      color: #999;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .5s; }
+    .footer-navigation-link:hover {
+      color: #ffe327;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+    .footer-navigation-link:active {
+      color: #daa42a;
+      transform: translateY(0.3rem); }
+  .footer-copyright {
+    float: right;
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 95%; }
 
 .section-about {
   background-color: #f7f7f7;
