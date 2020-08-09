@@ -15,7 +15,7 @@
 
         //box-shadow: 2rem 2rem 0rem rgba($color: #000000, $alpha: .3);
 
-       // transform: scale(50);
+       //transform: scale(50);
     }
     &-button {
         width: 7rem;
@@ -88,9 +88,18 @@
              color: $color-primary-gold-dark;
              transform: translateX(1rem);
              cursor: pointer;
-        }
-       
+        }  
+             
+   
     }
+
+    &-nav &-list &-item &-link:active  + &-background {
+           transform: scale(0);
+          
+        }
+    &-nav &-list &-item:active + &-background {
+           transform: scale(0);
+        }
 
   
     // Functionality
@@ -101,6 +110,8 @@
             opacity: 1;
             width: 100%;
         }
+
+
 
     // Menu Icon 
     &-icon {
