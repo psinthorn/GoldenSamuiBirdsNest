@@ -31,6 +31,20 @@
 }
 
 .btn-text {
+    &-white {
+    color: $color-white;
+    transition: all .5s;
+    padding: 1rem;
+
+        &:hover {
+            font-size: $default-font-size;
+            color: $color-primary-gold-dark;
+            background-color: $color-grey-light-1;
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .15);
+        }
+    }
+
     &:link,
     &:visited {
         font-size: $default-font-size;
@@ -42,19 +56,21 @@
         transition: all .2s;
     }
 
+
     &:hover {
         font-size: $default-font-size;
         color: $color-white;
         background-color: $color-grey;
         transform: translateY(-2px);
         box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .15);
-}
+    }
 
-&:active {
-     box-shadow: 0 .5rem 1rem rgba($color: $color-black, $alpha: .15);
-    transform: translateY(0px);
-    
-}
+   
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color: $color-black, $alpha: .15);
+        transform: translateY(0px);
+        
+    }
    
 }
 
