@@ -24,6 +24,11 @@
     &-text {
 
     }
+     &-number {
+                font-size: 5rem;
+                font-weight: 700;
+            }
+
     &-price {
          background-color: rgba($color: $color-primary-red, $alpha: .1);
         color: $color-primary-red;
