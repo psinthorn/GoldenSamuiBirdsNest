@@ -302,6 +302,9 @@ body {
     background-image: linear-gradient(to right, #ffe327, #daa42a);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box-number {
+    font-size: 5rem;
+    font-weight: 700; }
   .feature-box-price {
     background-color: rgba(221, 28, 29, 0.1);
     color: #dd1c1d; }
@@ -444,6 +447,49 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.form-group:not(:last-child) {
+  margin: .5rem 0; }
+
+.form-input {
+  outline: none;
+  -moz-outline: none;
+  font-family: inherit;
+  color: #777;
+  font-size: 2rem;
+  padding: .5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .5s; }
+  .form-input:focus {
+    outline: none;
+    -moz-outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #55c57a; }
+  .form-input:focus:invalid {
+    outline: none;
+    -moz-outline: none;
+    border-bottom: 3px solid orangered; }
+  .form-input::-webkit-input-placeholder {
+    color: #999; }
+
+.form-label {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: inherit;
+  margin-left: 2rem;
+  margin-top: .6rem;
+  display: block;
+  transition: all .5s; }
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .header {
   height: 100vh;
@@ -655,9 +701,8 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 0rem;
-  background-size: cover;
-  height: 100vh; }
+  padding: 15rem;
+  background-size: cover; }
 
 .section-product {
   background-color: #f7f7f7; }
@@ -667,9 +712,23 @@ body {
     background-image: url(./../img/samui-birds-nest-bg-bl-02-03.png);
     background-size: cover; }
   .section-product .product-list {
-    height: 75vh;
-    padding: 10rem; }
+    padding: 15rem; }
   .section-product .product-price {
     background-color: #fff;
     height: 150vh;
     padding: 10rem; }
+
+.section-connect {
+  padding: 15rem;
+  background-image: linear-gradient(to right bottom, #999, #777); }
+
+.connect {
+  background-image: linear-gradient(105deg, rgba(218, 164, 42, 0.9) 0%, rgba(218, 164, 42, 0.9) 50%, transparent 50%), url(./../img/samui-birds-nest-ingredient.jpg);
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  height: 50rem;
+  border-radius: 3px; }
+  .connect-form {
+    padding: 5rem 10rem;
+    color: #f7f7f7;
+    font-size: 2rem; }
