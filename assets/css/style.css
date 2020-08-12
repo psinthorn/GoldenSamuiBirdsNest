@@ -551,7 +551,8 @@ body {
   .footer-navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
-    display: inline-block; }
+    display: inline-block;
+    float: right; }
     .footer-navigation-list {
       list-style: none;
       padding-left: 0; }
@@ -651,10 +652,10 @@ body {
   transform: translateX(1rem);
   cursor: pointer; }
 
-.navigation-nav .navigation-list .navigation-item .navigation-link:active + .navigation-background {
+.navigation-nav .navigation-list .navigation-item .navigation-link:active .navigation-background {
   transform: scale(0); }
 
-.navigation-nav .navigation-list .navigation-item:active + .navigation-background {
+.navigation-nav .navigation-list .navigation-item:active .navigation-background {
   transform: scale(0); }
 
 .navigation-checkbox:checked ~ .navigation-background {
