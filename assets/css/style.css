@@ -494,7 +494,7 @@ body {
 .header {
   height: 100vh;
   /* background-image: linear-gradient(to right bottom, rgba(218,25,26, 0.8), rgba(245,81,30, 0.8)), url(./../img/fresh-edible-bird-s-nest.jpg); */
-  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(247, 247, 247, 0.2)), url(./../img/samui-birds-nest-top-001.png);
+  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(247, 247, 247, 0.2)), url(./../img/samui-birds-nest-top-002.png);
   background-size: cover;
   background-position: top;
   position: relative;
