@@ -501,10 +501,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 5rem;
-    left: 4rem; }
+    top: 5.05rem;
+    left: 4rem;
+    position: fixed;
+    z-index: 20000; }
   .header__logo {
-    height: 9.4rem; }
+    height: 9.5rem;
+    position: fixed;
+    z-index: 20100; }
   .header__text-box {
     position: absolute;
     top: 30%;
