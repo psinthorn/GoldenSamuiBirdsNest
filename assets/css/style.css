@@ -494,14 +494,14 @@ body {
 .header {
   height: 100vh;
   /* background-image: linear-gradient(to right bottom, rgba(218,25,26, 0.8), rgba(245,81,30, 0.8)), url(./../img/fresh-edible-bird-s-nest.jpg); */
-  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(247, 247, 247, 0.2)), url(./../img/samui-birds-nest-bg-bl-03.png);
+  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.2), rgba(247, 247, 247, 0.2)), url(./../img/samui-birds-nest-top-001.png);
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: 4rem; }
   .header__logo {
     height: 9.4rem; }
@@ -710,7 +710,7 @@ body {
   .section-product .product-banner {
     height: 100vh;
     padding: 10rem;
-    background-image: url(./../img/samui-birds-nest-bg-bl-02-03.png);
+    background-image: url(./../img/samui-birds-nest-bg-bl-hand.png);
     background-size: cover; }
   .section-product .product-list {
     padding: 15rem; }
