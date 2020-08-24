@@ -501,14 +501,12 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 5.05rem;
-    left: 4rem;
-    position: fixed;
-    z-index: 20000; }
+    top: 2rem;
+    left: 4rem; }
   .header__logo {
-    height: 9.5rem;
+    height: 15rem;
     position: fixed;
-    z-index: 20100; }
+    z-index: 1000001; }
   .header__text-box {
     position: absolute;
     top: 30%;
@@ -550,7 +548,7 @@ body {
     text-align: center;
     margin-bottom: 8rem; }
   .footer-logo {
-    width: 10rem;
+    width: 15rem;
     height: auto; }
   .footer-navigation {
     border-top: 1px solid #777;
