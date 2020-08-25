@@ -520,11 +520,10 @@ body {
   outline: none;
   -moz-outline: none;
   font-family: inherit;
-  color: #777;
+  color: #fff;
   font-size: 2rem;
   padding: .5rem 2rem;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
   width: 100%;
