@@ -5,6 +5,22 @@ Golden Dark: #daa42a
 Golden Light: #ffe327
 
 */
+/*
+Media query manager
+
+0 - 600px phone
+601 - 900px tablet portrail
+901 - 1200px tablet landscape
+1201 - 1800 is normal style apply
+1800+ Big screen
+
+    Breakpoint agument choices
+    - phone
+    - tablet-port
+    - tablet-land
+    - larger (big screen)
+
+ 1em = 16px */
 *,
 *::after,
 *::before {
@@ -13,15 +29,31 @@ Golden Light: #ffe327
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* 1200px */
+  /* 1800px */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
   box-sizing: border-box; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -50,7 +82,7 @@ body {
   margin-bottom: 3.5rem; }
   .heading-primary--main {
     display: block;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     letter-spacing: 2rem;
     display: inline-block;
@@ -61,9 +93,17 @@ body {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     /* animation-delay: 1s; */ }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 3rem;
+        letter-spacing: 1rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 2.5rem;
+        letter-spacing: .3rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
     /* use short animation */
@@ -73,6 +113,14 @@ body {
         animation-duration: 2s;
         animation-timing-function: ease-out; */
     /* animation-delay: 1s; */ }
+    @media (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 2rem;
+        letter-spacing: .5rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1rem;
+        letter-spacing: .2rem; } }
   .heading-primary-title--golden {
     color: #daa42a;
     font-size: 4rem;
@@ -501,12 +549,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 2rem;
+    top: 4.5rem;
     left: 4rem; }
   .header__logo {
-    height: 15rem;
-    position: fixed;
-    z-index: 1000001; }
+    height: 10rem; }
   .header__text-box {
     position: absolute;
     top: 30%;
