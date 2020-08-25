@@ -4,4 +4,9 @@
     padding: 15rem;
     background-size: cover;
     //height: 100vh;
+
+    @include respond(tabletport){
+        padding: 5rem;
+    }
+
 }

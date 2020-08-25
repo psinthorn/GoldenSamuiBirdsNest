@@ -7,11 +7,16 @@
         padding: 10rem;
         background-image: url(./../img/samui-birds-nest-bg-bl-hand.png);
         background-size: cover;
+        background-position: center;
 
     }
         &-list {
             //height: 75vh;
             padding: 15rem;
+
+            @include respond(tabletport) {
+                padding: 5rem;
+            }
         }
 
         &-price {

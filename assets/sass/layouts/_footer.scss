@@ -1,8 +1,13 @@
 
 .footer {
     font-size: 1.4rem;
-    padding: 10rem 0;
+    padding: 10rem;
     background-color: $color-grey-dark-1;
+
+     @include respond(tabletport) {
+           text-align: center;
+       }
+
     
 
     &-logo-box {
@@ -25,6 +30,7 @@
          &-list {
         list-style: none;  
         padding-left: 0;
+
     }
         &-item {
             display: inline-block;
@@ -54,6 +60,7 @@
         }
 
        
+       
     }
 
    
@@ -63,5 +70,10 @@
         padding-top: 2rem;
         width: 95%;
        // display: inline-block;
+
+       @include respond(tabletport) {
+           text-align: center;
+           border-top: 0px solid $color-grey;
+       }
     }
 }

@@ -30,4 +30,8 @@
     &:hover &-photo:not(:hover){
         transform: scale(.95);
     }
+
+    @include respond(tabletport) {
+        display: none;
+    }
 }
