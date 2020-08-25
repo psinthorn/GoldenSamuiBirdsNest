@@ -5,9 +5,9 @@
     backface-visibility: hidden;
      margin-bottom: 3.5rem;
 
-    //  @include respond(tabletport) {
-    //      margin-top: 10rem;
-    //  }
+     @include respond(tabletport) {
+         margin-top: 8rem;
+     }
 
      &--main {
     display: block;

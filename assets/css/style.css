@@ -80,6 +80,9 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3.5rem; }
+  @media (max-width: 56.25em) {
+    .heading-primary {
+      margin-top: 8rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4.5rem;
